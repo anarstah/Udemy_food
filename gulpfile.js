@@ -115,3 +115,10 @@ gulp.task("prod", () => {
 });
 
 gulp.task("default", gulp.parallel("watch", "build"));
+
+browsersync.init({
+  open: 'external',
+  host: '',
+  proxy: 'localhost:8000/Udemy_food/dist',
+  port: 8000
+});
