@@ -232,7 +232,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             const obj = {};
 
-            formData.forEach((key, value) => {
+            formData.forEach((value, key) => {
                 obj[key] = value;
             })
 
